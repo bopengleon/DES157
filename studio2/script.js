@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var bodyPart = inputs[5].value;
       console.log("111");
       var response = document.getElementById('response')
-      response.innerHTML =  firstName +firstName++possession+adj1+adj2+noun+firstName+bodyPart+noun+bodyPart;
+      response.innerHTML =  firstName +firstName+possession+adj1+adj2+noun+firstName+bodyPart+noun+bodyPart;
       var hider = document.getElementById('hider');
       var inps = document.getElementById('inputs');
       var body = document.getElementsByTagName('body');
