@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link href="style.css" rel="stylesheet">
-	<title>STUDIO 2: MAD LIBS 2.0</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<link href="style.css" rel="stylesheet">
+		<title>STUDIO 2: MAD LIBS 2.0</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+		<script src='script.js' type="text/javascript"></script>
+	</head>
+	<body >
+		<header>
+			<h1>madlib2. <strong> WHO R U </strong> </h1>
+		</header>
+		<div id="inputs">
+			<form name="lib">
+			<div>
+				<input type="text" name="firstName" placeholder="name">
+				
+				<input type="text" name="possession" placeholder="wish">
+			</div>
+			<div>
+				
+				<input type="text" name="adj1" placeholder="age">
 
+				<input type="text" name="adj1" placeholder="adj">
+			</div>
+			<div>
+				<input type="text" name="noun" placeholder="adv">
+				
+				<input type="text" name="bodyPart" placeholder="bodyPart">
+			</div>
+			<div class="submission">
+				<input type="reset" value="reset" style="height:70px"  />
+				<input type="submit" value="submit" />
+			</div>
+		</form>
+	</div>
+	<div id="hider" class="madlig-vis madlib-hid">
+		<p id="response"></p>	
+		
+	</div>
+	<footer>
+		<div><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></div>
+		<div><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></div>
+	</footer>
 </body>
 </html>
