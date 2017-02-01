@@ -70,8 +70,6 @@ input{
 	height:  50px;
 	font-size: 50px;
 	color: #AA1111;
-	size:5;
-
 }
 input[type="reset"], input[type="submit"] {
   font-size:60px;

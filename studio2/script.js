@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var bodyPart = inputs[5].value;
       console.log("111");
       var response = document.getElementById('response')
-      response.innerHTML = "Trillions of years ago, "+ firstName +" originated from the second dimension. "+firstName+", however, despised living there, and burned it down along with everything it had ever known, including its own "+possession+". It eventually took over a "+adj1+", shifting intergalactic rift between dimensions—a "+adj2+" space known as the "+noun+" Realm. Without a physical form, "+firstName+" could only access the "+bodyPart+" of the dimension's beings. Those who were touched by the nightmarish "+noun+"s in the "+bodyPart+"world were fated to insanity.";
+      response.innerHTML =  firstName +firstName++possession+adj1+adj2+noun+firstName+bodyPart+noun+bodyPart;
       var hider = document.getElementById('hider');
       var inps = document.getElementById('inputs');
       var body = document.getElementsByTagName('body');
@@ -27,16 +27,3 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }
 
 });
-// console.log('reading');
-
-// //capture the submit event
-//   document.f.onsubmit = processForm;
-
-//   function processForm() {
-
-//     var userName = document.f.userName.value;
-//     alert('Hi ' + userName);
-
-//     return false;
-    
-//   }
