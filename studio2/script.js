@@ -11,17 +11,16 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var bodyPart = inputs[5].value;
       console.log("111");
       var response = document.getElementById('response')
-      response.innerHTML =  firstName +firstName+possession+adj1+adj2+noun+firstName+bodyPart+noun+bodyPart;
+      response.innerHTML ="Do you believe it？"+"My budy "+firstName+" will "+possession+", because I am rich. You know that. I am really rich."+"We are going to have a unbeliable, "+" gift for "+firstName+" "adj2+noun+"because he had red "+bodyPart+ " just like me."+" You’re disgusting. The point is, you can never be too greedy";
       var hider = document.getElementById('hider');
       var inps = document.getElementById('inputs');
       var body = document.getElementsByTagName('body');
-      // var billImg = document.getElementById('bill');
+      
       hider.classList.remove('madlib-hid');
       hider.classList.add('madlib-vis');
       inps.classList.add('madlib-hid');
       body[0].classList.add('black');
-      // billImg.classList.remove('img-hid')
-      // billImg.classList.add('img-vis');
+      
 
       return false;
     }

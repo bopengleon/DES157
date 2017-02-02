@@ -88,4 +88,15 @@ strong{
 }
 #hider{
 	margin-top: 300px;
+	background-image: url("T.png");
+	background-size:contain;
+	height: 900px;
 }
+#response{
+	font-size: 16px;
+	font-family: "Helvetica Neue";
+	padding-left: 400px;
+	padding-right: 400px;
+	padding-top: 470px;
+}
+
