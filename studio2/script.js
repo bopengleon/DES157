@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var bodyPart = inputs[5].value;
       console.log("111");
       var response = document.getElementById('response')
-      response.innerHTML ="Do you believe it？"+"My budy "+firstName+" will "+possession+", because I am rich. You know that. I am really rich."+"We are going to have a unbeliable, "+" gift for "+firstName+" "adj2+noun+"because he had red "+bodyPart+ " just like me."+" You’re disgusting. The point is, you can never be too greedy";
+      response.innerHTML ="Do you believe it？"+"My budy "+firstName+" will "+possession+", because I am rich. You know that. I am really rich."+"We are going to have a unbeliable, "+" gift for "+firstName+" "+adj2+noun+"because he had red "+bodyPart+ " just like me.";
       var hider = document.getElementById('hider');
       var inps = document.getElementById('inputs');
       var body = document.getElementsByTagName('body');
