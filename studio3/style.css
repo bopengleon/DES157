@@ -1,0 +1,76 @@
+
+#container{
+	width: 70%;
+	margin:auto;
+}
+
+#img1{
+
+width:150px;
+height:150px;
+display: table-cell;
+padding-left: 20px;
+padding-right:20px;
+padding-top: 50px;
+/* Rectangle: */
+background: rgba(0,0,0,0.20);
+}
+
+#Row{
+	display: table;
+    width: 70%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+@keyframes point {
+    0% {fill-opacity:0.3;}
+    25%{fill-opacity:1}
+    50% {fill-opacity:1};
+    75% {fill-opacity:0.3;}
+    100% {fill-opacity:0.3;}
+}
+
+#Oval-2{
+	animation-name: point;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 60px;
+}
+h4{
+	font-size: 20px;
+}
+path {
+  stroke-dasharray: 50;
+  animation: dash 5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+.p{
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    letter-spacing: -3.75px;}
+ @keyframes typing {
+      from { width: 0 }
+  to { width:30%}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
