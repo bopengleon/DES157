@@ -4,16 +4,15 @@
 	margin:auto;
 }
 
-#img1{
-
-width:150px;
-height:150px;
-display: table-cell;
-padding-left: 20px;
-padding-right:20px;
-padding-top: 50px;
-/* Rectangle: */
-background: rgba(0,0,0,0.20);
+.p1{
+  width:150px;
+  height:150px;
+  display: table-cell;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 50px;
+  /* Rectangle: */
+  background: rgba(0,0,0,0.20);
 }
 
 #Row{
@@ -31,7 +30,7 @@ background: rgba(0,0,0,0.20);
     100% {fill-opacity:0.3;}
 }
 
-#Oval-2{
+circle{
 	animation-name: point;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -43,6 +42,7 @@ body{
 }
 h4{
 	font-size: 20px;
+  color:white;
 }
 path {
   stroke-dasharray: 50;
