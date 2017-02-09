@@ -6,7 +6,7 @@
 
 .p1{
   width:150px;
-  height:150px;
+  height:190px;
   display: table-cell;
   padding-left: 20px;
   padding-right:20px;
@@ -44,17 +44,7 @@ h4{
 	font-size: 20px;
   color:white;
 }
-/*path {
-  stroke-dasharray: 50;
-  animation: dash 5s linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}*/
+/*su*/
 .p{
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
