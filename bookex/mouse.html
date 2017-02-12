@@ -1,34 +1,33 @@
-<!--NOTE: Replace all of the uppercase text from glenda with your own custom content-->
 <!doctype html>
-<html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>! ADD A DESCRIPTIVE TITLE HERE...DO NOT FORGET TO UPDATE THIS !</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px
-        }
-
-        body {
-            font-family: Verdana, Geneva, sans-serif;
-            color: white;
-            background-color: #333;
-            font-size: 11px;
-            margin: 24px;
-        }
-
-        h1 {
-            margin-bottom: 24px;
-        }
-    </style>
-</head>
+<style>
+  .trail { 
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: teal;
+  }
+  body {
+    height: 300px;
+  }
+</style>
 
 <body>
-    <h1>! ADD THE CHAPTER NUMBER HERE FOLLOWED BY BRIEF TITLE FOR THE EXERCISE !</h1>
-    <h2>open the console to see the results of the script</h2>
-    <script>
-        // ADD DESCRIPTIVE COMMENTS BEFORE STATEMENTS AND BLOCK OF CODE
-    </script>
+<script>
+  var dots = [];
+  for (var i = 0; i < 12; i++) {
+    var node = document.createElement("div");
+    node.className = "trail";
+    document.body.appendChild(node);
+    dots.push(node);
+  }
+  var currentDot = 0;
+  
+  addEventListener("mousemove", function(event) {
+    var dot = dots[currentDot];
+    dot.style.left = (event.pageX - 3) + "px";
+    dot.style.top = (event.pageY - 3) + "px";
+    currentDot = (currentDot + 1) % dots.length;
+  });
+</script>
 </body>
