@@ -60,8 +60,8 @@ footer {
 	text-align: center
 }
 @keyframes color{
-  from {fill:white; }
-  to { fill:rgba(93, 112, 195, 0.5); }
+  from {fill:rgb(255,255,255); }
+  to { fill:rgb(93, 112, 195); }
 }
 
 
