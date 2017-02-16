@@ -34,7 +34,7 @@ div{
 	font-weight:bold;
 	color:black;
 
-	opacity:1;
+	opacity:0;
 	transition: all 1s;
 	/* Rectangle 4: */
 	background: rgba(255,255,255,0.50);
@@ -58,4 +58,8 @@ li{
 footer {
 	padding-top: 200px;
 	text-align: center
+}
+
+#Group-5:hover{
+	fill:blue;
 }
