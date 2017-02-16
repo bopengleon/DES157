@@ -30,6 +30,7 @@ function showMsg(col) {
 }
 div3.addEventListener('mouseover', function() {
     console.log("mouseover");
+    col2.innerhtml+=d;
     tipTimer = setTimeout( showMsg, 1000, col2);                
 });
 
