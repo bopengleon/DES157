@@ -59,7 +59,25 @@ footer {
 	padding-top: 200px;
 	text-align: center
 }
+@keyframes color{
+  from {fill:white; }
+  to { fill:rgba(93, 112, 195, 0.5); }
+}
 
-#Group-5:hover{
-	fill:blue;
+
+#Rectangle1:hover{
+	animation-name: color;
+	animation-duration: 3s;
+}
+#Rectangle2:hover{
+	animation-name: color;
+	animation-duration: 3s;
+}
+#Rectangle3:hover{
+animation-name: color;
+	animation-duration: 3s;
+}
+#Rectangle4:hover{
+	animation-name: color;
+	animation-duration: 3s;
 }
