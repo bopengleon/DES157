@@ -8,6 +8,9 @@ var div4=document.getElementById('Rectangle4');
 var col1=document.getElementById('col1');
 var col2=document.getElementById('col2');
 var col3=document.getElementById('col3');
+var date=document.getElementById('date');
+var d = new Date();
+col2.innerhtml=d;
 
 div4.addEventListener('mouseover', function() {
     console.log("mouseover");
