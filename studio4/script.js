@@ -10,7 +10,7 @@ var col2=document.getElementById('col2');
 var col3=document.getElementById('col3');
 var date=document.getElementById('date');
 var d = new Date();
-col2.innerhtml=d;
+col2.innerhtml= d.getTime();
 
 div4.addEventListener('mouseover', function() {
     console.log("mouseover");
@@ -30,7 +30,7 @@ function showMsg(col) {
 }
 div3.addEventListener('mouseover', function() {
     console.log("mouseover");
-    col2.innerhtml+=d;
+    col2.innerhtml+=d.getTime();
     tipTimer = setTimeout( showMsg, 1000, col2);                
 });
 
