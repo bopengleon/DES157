@@ -1,0 +1,39 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Lato-Regular.ttf);
+}
+
+@keyframes pulse {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: #FF4136;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+	body{
+		width: 1149px;
+		margin:auto;
+    font-family: myFirstFont;
+	}
+  header{
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+  a{
+    text-decoration: none;
+    color:red;
+  }
+  a:hover{
+    font-size:150%;
+    color:white;
+    background-color: black;
+  }
+  h1,h2{
+     animation: pulse 5s infinite;
+  }
+  svg{margin: auto;}
