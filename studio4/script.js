@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     }
     div3.addEventListener('mouseover', function() {
         console.log("mouseover");
-        col2.innerhtml+=d.getTime();
+        col2.innerhtml=d.getTime();
         tipTimer = setTimeout( showMsg, 1000, col2);                
     });
 
