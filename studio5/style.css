@@ -20,10 +20,6 @@
 		margin:auto;
     font-family: myFirstFont;
 	}
-  header{
-    padding-bottom: 200px;
-    padding-top: 200px;
-  }
   a{
     text-decoration: none;
     color:red;
