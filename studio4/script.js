@@ -30,8 +30,11 @@ document.addEventListener("DOMContentLoaded", function(event){
     }
     div3.addEventListener('mouseover', function() {
         console.log("mouseover");
-        col2.innerhtml=d.getTime();
-        tipTimer = setTimeout( showMsg, 1000, col2);                
+        var time=d.getTime();
+       
+        tipTimer = setTimeout( showMsg, 1000, col2);
+        col2.innerHTML = Date();   
+        tipTimer = setTimeout( showMsg, 1000, col2);             
     });
 
     div3.addEventListener('mouseout', function() {
