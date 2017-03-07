@@ -16,20 +16,17 @@
 }
 
 	body{
-		width: 1149px;
-		margin:auto;
     font-family: myFirstFont;
 	}
-  a{
-    text-decoration: none;
-    color:red;
-  }
-  a:hover{
-    font-size:150%;
-    color:white;
-    background-color: black;
-  }
-  h1,h2{
-     animation: pulse 5s infinite;
-  }
-  svg{margin: auto;}
+#map{
+  width: 50%;
+  height: 1200px;
+  float:right;
+}
+#text{
+  padding-top: 200px;
+  padding-left: 20px;
+  width: 50%;
+  height: 800px;
+  font-size: 80px;
+}
