@@ -91,7 +91,7 @@ li{
 
 #main-v{
    background-color:#818181;
-   height: 490px;
+   height: 1000px;
 }
 
 #youtube-bar{
@@ -135,4 +135,7 @@ li{
 footer{
    height: 100px;
    background-color: #1d1d1d;
+}
+#logopng{
+  width: 50px;
 }
