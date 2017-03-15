@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
     zoom:13,
     style: 'mapbox://styles/peng0729/cizzvudo2005t2sob8vjfg0d9'
 });
-
+map.addControl(new mapboxgl.NavigationControl());
 map.on('load', function () {
 
     map.addLayer({
@@ -35,5 +35,9 @@ map.on('load', function () {
             "text-offset": [0, 0.6],
             "text-anchor": "top"
         }
+    var popup = new mapboxgl.Popup({closeOnClick: false})
+    .setLngLat([-96, 37.8])
+    .setHTML('<h1>Hello World!</h1>')
+    .addTo(map);
     });
 });

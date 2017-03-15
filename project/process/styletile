@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				width:60%;
+				margin: auto;
+				padding-top: 100px;
+			}
+		</style>
+		<title> styletile</title>
+	</head>
+	<body>
+		<h1>styletile</h1>
+		<img src="styletile.png" style="max-height: 900px;">
+		
+</body>
+</html>
