@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Planner</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Quicksand" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+  <body>
+     <nav>
+        <div id="logo"> <a href="index.html"><img id="logopng" src="logo.png"> HANGZHOU</a></div>
+        <ul>
+          <li><a href="#">Search</a></li>
+           <li><a href="#youtube-bar">Videos</a></li>
+           <li><a href="map.html">Map</a></li>
+           <li><a href="planner.html">Build Your Trip</a></li>
+           <li><a href="#">MUST GO</a></li>
+        </ul>
+     </nav>
+    <main>
+<<<<<<< HEAD
+           <div id="inner-scroll">
+              <div id="map" class="map2"></div>
+           </div>
+    
+      <h1>PLAN YOUR TRIP</h1>
+=======
+      <h1>· PLAN YOUR TRIP ·</h1>
+      <div style="width:1240px; margin: auto;">
+      <section id="scroll-p" style=" margin:50px 20px 0 35px;">
+           <div id="inner-scroll-p">
+              <div id="map" style="height: 510px; margin-top: 0"></div>
+           </div>
+        </section>
+>>>>>>> origin/master
+       <div id="places">
+        <header>
+          <h2>PLACE TO GO</h2>
+         <h3>drag & drop</h3>
+        </header>
+         <ul id="placelist" class="lists" ondrop="drop(event)" ondragover="allowDrop(event)">
+           <li draggable="true" ondragstart="drag(event)" id="d1"><div class="dragbox">West Lake</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d2"><div class="dragbox">Lingyin Temple</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d3"><div class="dragbox">dragon well tea village</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d4"><div class="dragbox">jingci temle</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d5"><div class="dragbox">baochu pagoda</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d6"><div class="dragbox">sunrise terrace</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d7"><div class="dragbox">qinfhefang old street</div></li>
+           <li draggable="true" ondragstart="drag(event)" id="d8"><div class="dragbox">china national silk museum</div></li>
+         </ul>
+      </div>
+      <div id="plans">
+          <div class="days">
+            <h2>DAY 1</h2>
+          </div>
+          <div id="list-container">
+            <ul id="planlist" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+          </div>
+          <div id="more">ADD PLANS</div>
+        </div>
+      </div>
+    </main>
+     <footer>
+     <div id="links">
+       <a href="https://www.expedia.com/">Flights</a>
+       <span> | </span>
+       <a href="https://www.hotels.com/">Hotels</a>
+       <span> | </span>
+       <a href="http://english.ctrip.com/#from=click_en">Rental Cars</a>
+       </div>
+     </footer>
+      <script src="script.js" type="text/javascript"> </script>
+   </body>
+</html>
