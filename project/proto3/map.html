@@ -6,10 +6,12 @@
    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="dragula/dragula.min.js"></script>
+    <link href="dragula/dragula.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
    <nav>
-      <div id="logo"><img id="logopng" src="logo.png">HANGZHOU</div>
+      <div id="logo"> Hangzhou<img id="logopng" src="logo.png"></div>
       <ul>
          <li>Search</li>
          <li><a href="planner.html">Build Your Trip</a></li>
@@ -19,14 +21,14 @@
       </ul>
    </nav>
 
-      
-         
-            <div id="map" class="map1"></div>
+      <section id="scroll">
+         <div id="inner-scroll">
+            <div id="map"></div>
 
-
-       
-      
-      <!-- <div style="padding-right: 200px; color: red;">mustGo place is marked "stars", click see more information</div> -->
+            <div id="planner"></div>
+         </div>
+      </section>
+      <div style="padding-right: 200px; color: red;">mustGo place is marked "stars", click see more information</div>
    </div>
    <footer>
    <div id="links">

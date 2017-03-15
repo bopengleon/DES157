@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=============================================================*/
+
+body{
+   background-color: #fff;
+   height: 100%;
+   width: 100%;
+}
+
+nav{
+   width: 100%;
+   height: 70px;
+   position: fixed;
+   color: #fff;
+}
+
+#logo{
+   float: left;
+   width: 200px;
+   height: 100%;
+   margin-left: 20px;
+   padding: 20px;
+   font-size: 30px;
+   font-weight: 500;
+}
+
+ul{
+   padding: 30px;
+   width: 800px;
+   float: right;
+}
+
+li{
+   float: right;
+   width: 150px;
+   text-align: center;
+}
+
+#container{
+   width: 100%;
+   height: 100%;
+}
+
+#main-v{
+   background-color:#818181;
+   height: 1000px;
+}
+
+#youtube-bar{
+   height: 100px;
+   margin-bottom: 40px;
+   padding-left: 20px;
+}
+
+#selection{
+   float: left;
+   width: 350px;
+   height: 100%;
+   margin: 20px 30px;
+   background-color:#D8d8d8;
+}
+
+#scroll{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    overflow: scroll;
+    direction:ltr;
+}
+
+#inner-scroll{
+   width: 2400px;
+   height: 100%;
+}
+
+#map, #planner{
+   float: left;
+   width: 1200px;
+   height: 500px;
+   background-color:#818181;
+}
+
+#planner{
+   background-color:#832981;
+}
+
+footer{
+   height: 100px;
+   background-color: #1d1d1d;
+}
+#logopng{
+  width: 50px;
+}

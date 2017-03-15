@@ -72,7 +72,7 @@ map.on('mousemove', function (e) {
     map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 });
 map.addControl(new mapboxgl.NavigationControl());
-map.scrollZoom.disable();
+
 
 // map.on('load', function () {
 
@@ -103,21 +103,16 @@ map.scrollZoom.disable();
 // });
 
 // ===================  Planner drag =====================
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-
-// ===================  add plan =====================
+dragula([document.getElementById('placelist'), document.getElementById('planlist')], {revertOnSpill: true})
+      .on('drag', function (el) {
+        el.className = el.className.replace(' moved', '');
+      }).on('drop', function (el) {
+        el.className += ' moved';
+      }).on('over', function (el, lists) {
+        lists.className += ' over';
+      }).on('out', function (el, lists) {
+        lists.className = lists.className.replace(' over', '');
+      });
 
 
 function myFunction() {
