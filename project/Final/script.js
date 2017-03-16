@@ -1,3 +1,5 @@
+
+
 mapboxgl.accessToken = 'pk.eyJ1IjoicGVuZzA3MjkiLCJhIjoiY2l6enQ3NGluMDQ2bDJ3bmhmMGNmZXk4YyJ9.qCYFD8QwGIzB8v5UY5Ms1Q';
 var map = new mapboxgl.Map({
     container: 'map',
@@ -18,22 +20,99 @@ map.on('load', function () {
                 "features": [{
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong>Three Pool mirroring the moon</strong><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">link</a> add to list button </p>",
+                        "description": "<strong>7.Three Pool mirroring the moon</strong>",
                         "icon": "star"
                     },
                     "geometry": {
                         "type": "Point",
                         "coordinates":  [120.1453, 30.2388]
                     }
-                }, {
+                },{
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong>Truckeroo</strong>",
+                        "description": "<strong>8.Four Season hotel Hangzhou</strong> <p><a href=\"http://www.fourseasons.com/hangzhou/\" target=\"_blank\" title=\"Opens in a new window\">Four season</a>  </p>",
+                        "icon": "restaurant"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.1276, 30.2514]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>6.Fish Viewing at the Flower Pond </strong>",
                         "icon": "star"
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [120.147274, 30.247187]
+                        "coordinates": [120.137470, 30.231010]
+                    }
+                },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>5.Orioles Singing in the Willows </strong>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.157753, 30.239552]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>4.Remnant Snow on the Bridge in Winter </strong>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.1497753, 30.2592552]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>3.Moon over the Peaceful Lake in Autumn </strong>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.14527, 30.2532]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>2.Curved Yard and Lotus Pool in Summer </strong>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.13159, 30.24603]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>1.Dawn on the Su Causeway in Spring </strong>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.137808, 30.248343]
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>9.Lou Wai Lou</strong>",
+                        "icon": "restaurant"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [120.1409, 30.2503]
                     }
                 }]
             }
@@ -119,29 +198,39 @@ function drop(ev) {
 
 // ===================  add plan =====================
 
+var n = 0;
+var counter = 1;
 
-function myFunction() {
-    var n = 2;
-    var lists = document.createElement("div");
-    lists.className = "lists";
-    lists.style.marginTop = "100px";
+function addops() {
+    n = n+1;
+    var x = document.getElementById("s");
+    var option = document.createElement("option");
+    option.text = "DAY " + n;
+    option.id = "btn" + n;
+    option.selected = true;
+    option.value = n;
+    x.add(option);
 
-    var days = document.createElement("div");
-    days.className = "days";
+    var newlist = document.createElement("div");
+    newlist.className = "newlist";
+    newlist.id = "day" + n;
 
-    var day = document.createElement("h2");
-    day = document.createTextNode("Day " + n);
+    var uls = document.createElement("ul");
+    uls.id = "list" + n;
+    uls.className = "planlist";
+    uls.setAttribute("ondrop", "drop(event)");
+    uls.setAttribute("ondragover", "allowDrop(event)");
+    newlist.appendChild(uls);
+    // document.getElementById("day"+n).style.display = "block";
 
-    days.appendChild(day);
-    lists.appendChild(days);
 
-    var plists = document.createElement("ul");
-    plists.id = "planlist";
-    lists.appendChild(plists);
+    if(option.id !== "btn" + n){
+        console.log("ssssss");
+        newlist.style.display = "none";
+        console.log("sajsjsk");
+    }
 
-    var lis = document.createElement("li");
-    plists.appendChild(lis);
-
-    document.getElementById("plans").appendChild(lists);
-
+    document.getElementById("list-container").appendChild(newlist);
 }
+
+
