@@ -20,7 +20,7 @@ map.on('load', function () {
                 "features": [{
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong>7.Three Pool mirroring the moon</strong>",
+                        "description": "<strong>7.Three Pool mirroring the moon</strong><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">link</a> add to list button </p>",
                         "icon": "star"
                     },
                     "geometry": {
@@ -30,7 +30,7 @@ map.on('load', function () {
                 },{
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong>8.Four Season hotel Hangzhou</strong> <p><a href=\"http://www.fourseasons.com/hangzhou/\" target=\"_blank\" title=\"Opens in a new window\">Four season</a>  </p>",
+                        "description": "<strong>8.Four Season hotel Hangzhou</strong>",
                         "icon": "restaurant"
                     },
                     "geometry": {
@@ -224,7 +224,7 @@ function addops() {
     // document.getElementById("day"+n).style.display = "block";
 
 
-    if(option.id !== "btn" + n){
+    if(option.id !== "btn" + n && newlist.id !== "btn" + n){
         console.log("ssssss");
         newlist.style.display = "none";
         console.log("sajsjsk");
