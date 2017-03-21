@@ -1,78 +1,79 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-   <title>Planner</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Quicksand" rel="stylesheet">
-   <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
-   <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
-</head>
+  <head>
+    <title>Planner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Quicksand" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
   <body>
     <nav>
-        <div id="logo"> <a href="index.html"><img id="logopng" src="logo.png"> HANGZHOU</a></div>
-        <ul>
-          <li><a href="#">SEARCH</a></li>
-           <li><a href="planner.html">TRIP PLANNER</a></li>
-           <li><a href="map.html">MUST GO</a></li>
-        </ul>
+      <div id="logo"> <a href="index.html"><img id="logopng" src="logo.png"> HANGZHOU</a></div>
+      <ul>
+        <li><a href="#">SEARCH</a></li>
+        <li><a href="planner.html">TRIP PLANNER</a></li>
+        <li><a href="map.html">MUST GO</a></li>
+      </ul>
     </nav>
     <main>
-      <h1>PLAN YOUR TRIP</h1>
-      <!-- =================================== Map  =================================== -->
-      <div style="width:1240px; margin: auto;">
-        <section id="scroll-p" style=" margin:50px 10px 0 25px;">
-            <div id="inner-scroll-p">
-              <div id="map" style="height: 510px; margin-top: 0"></div>
-            </div>
-        </section>
-        <!-- =================================== places  =================================== -->
-        <div id="places">
-          <header>
-            <h2>PLACE TO GO</h2>
-            <h3>drag & drop</h3>
-          </header>
-          <ul class="placelist" id="list1" ondrop="drop(event)" ondragover="allowDrop(event)">
-             <li draggable="true" ondragstart="drag(event)" id="d1"><div class="dragbox view">Dawn on the Su Causeway in Spring</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d2"><div class="dragbox view">Curved Yard and Lotus Pool in Summer</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d3"><div class="dragbox view">Moon over the Peaceful Lake in Autumn</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d4"><div class="dragbox view">Remnant Snow on the Bridge in Winter</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d5"><div class="dragbox view">Orioles Singing in the Willows</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d6"><div class="dragbox view">Fish Viewing at the Flower Pond</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d7"><div class="dragbox view">Three Pool mirroring the moon</div></li>
-             <li draggable="true" ondragstart="drag(event)" id="d8"><div class="dragbox food">Four Season hotel Hangzhou</div></li>
-              <li draggable="true" ondragstart="drag(event)" id="d9"><div class="dragbox food">Lou Wai Lou</div></li>
-          </ul>
+    <h1>PLAN YOUR TRIP</h1>
+    <!-- =================================== Map  =================================== -->
+    <div style="width:1240px; margin: auto;">
+      <section id="scroll-p" style=" margin:50px 10px 0 25px;">
+        <div id="inner-scroll-p">
+          <div id="map" style="height: 510px; margin-top: 0"></div>
         </div>
-        <!-- =================================== plans  =================================== -->
-        <div id="plans">
-          <div id="list-container">
+      </section>
+      <!-- =================================== places  =================================== -->
+      <div id="places">
+        <header>
+          <h2>PLACE TO GO</h2>
+          <h3>drag & drop</h3>
+        </header>
+        <ul class="placelist" id="list1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <li draggable="true" ondragstart="drag(event)" id="d1"><div class="dragbox view">Dawn on the Su Causeway in Spring</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d2"><div class="dragbox view">Curved Yard and Lotus Pool in Summer</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d3"><div class="dragbox view">Moon over the Peaceful Lake in Autumn</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d4"><div class="dragbox view">Remnant Snow on the Bridge in Winter</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d5"><div class="dragbox view">Orioles Singing in the Willows</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d6"><div class="dragbox view">Fish Viewing at the Flower Pond</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d7"><div class="dragbox view">Three Pool mirroring the moon</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d8"><div class="dragbox food">Four Season hotel Hangzhou</div></li>
+          <li draggable="true" ondragstart="drag(event)" id="d9"><div class="dragbox food">Lou Wai Lou</div></li>
+        </ul>
+      </div>
+      <!-- =================================== plans  =================================== -->
+      <div id="plans">
+        <div id="list-container">
           <div class="selector">
             <select id="s">
               <option id="btn0">YOUR PLANS</option>
             </select>
           </div>
-            <div id="content-day">
-              <!-- new lists -->
-            </div>
+          <div id="content-day">
+            <!-- new lists -->
           </div>
-          <div id="more" onclick="addops()">ADD DAYS</div>
         </div>
+        <div id="more" onclick="addops()">ADD DAYS</div>
       </div>
+    </div>
     </main>
-     <!-- =================================== footer  =================================== -->
+    <!-- =================================== footer  =================================== -->
     <footer style="padding-bottom: 40px; z-index: 10;">
-       <div id="links">
-         <a href="https://www.expedia.com/">Flights</a>
-         <span> | </span>
-         <a href="https://www.hotels.com/">Hotels</a>
-         <span> | </span>
-         <a href="http://english.ctrip.com/#from=click_en">Rental Cars</a>
-       </div>
-     </footer>
-
-     <script src="script.js" type="text/javascript"> </script>
-   </body>
+      <div id="links">
+        <a href="https://www.expedia.com/">Flights</a>
+        <span> | </span>
+        <a href="https://www.hotels.com/">Hotels</a>
+        <span> | </span>
+        <a href="http://english.ctrip.com/#from=click_en">Rental Cars</a>
+        <span> | </span>
+        <a href="https://validator.w3.org/check?uri=referer"  target="_blank">VALID HTML 5</a>
+        <span> | </span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"  target="_blank">VALID CSS</a>
+      </div>
+    </footer>
+    <script src="script.js" type="text/javascript"> </script>
+  </body>
 </html>
-
 <div id="1"></div>
